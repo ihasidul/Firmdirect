@@ -1,9 +1,7 @@
-# FirmDirect (Project for B9IS123 PROGRAMMING FOR INFORMATION SYSTEMS)
+# FirmDirect 
 
 ## Overview
 
-This project is being developed as part of the coursework for the B9IS123 PROGRAMMING FOR INFORMATION SYSTEMS course at Dublin Business School.
+This is a platform where farmers can list their products for sale and general consumers can buy directly from the farmers. An additional feature will be that Other businesses and small stores can also post for their needs, and the platform will gather products from multiple farmers to serve the business's larger needs.
 
-See the report of this project on the docs folder.
 
-## [Docs](./docs/)
