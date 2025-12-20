@@ -31,4 +31,5 @@ def login_route(login_data: LoginRequest, db: Session = Depends(get_db)):
     User login endpoint.
     Returns JWT access token on successful authentication.
     """
+    print("In login_route")
     return login_view(login_data, db)

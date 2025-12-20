@@ -20,6 +20,11 @@ def register_user_view(user: CreateUser, db):
     """
     try:
         # Check if the user already exists
+        print("*"*80)
+        print(user)
+        print("-"*80)
+        print(user.__dict__)
+        print("*"*80)
         existing_user = get_user_by_username(db, user.username)
         if existing_user:
             raise HTTPException(status_code=400, detail="Username already exists")
@@ -44,6 +49,7 @@ def login_view(login_data: LoginRequest, db: Session) -> CustomJSONResponse:
     """
     try:
         # Authenticate user
+        print("In login_view")
         user = authenticate_user(db, login_data.username, login_data.password)
 
         if not user:

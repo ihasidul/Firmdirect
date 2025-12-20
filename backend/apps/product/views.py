@@ -98,6 +98,7 @@ def get_all_product_view(
     Return JSON-serializable list of products.
     """
     try:
+        print("In get_all_product_view")
         result = get_all_products(
             db_session=db,
             page=query_params.page,
@@ -110,6 +111,7 @@ def get_all_product_view(
             sort_by=query_params.sort_by,
             sort_order=query_params.sort_order,
         )
+        print("In get_all_product_view result ", result)
 
         if not result["success"]:
             raise HTTPException(status_code=500, detail=result["error"])

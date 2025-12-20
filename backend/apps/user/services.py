@@ -36,7 +36,8 @@ def authenticate_user(db: Session, username: str, password: str) -> Optional[Use
     user = db.query(User).filter(User.username == username).first()
     if not user:
         return None
-
+    print(f"Authenticating user: {username}")
+    print(f"password: {PWD_CONTEXT.verify(password, user.hashed_password)}")
     if not PWD_CONTEXT.verify(password, user.hashed_password):
         return None
 

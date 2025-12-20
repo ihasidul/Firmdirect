@@ -64,13 +64,17 @@ def get_all_products(
             stmt = stmt.order_by(asc(sort_column))
 
         # Get total count for pagination
-        count_stmt = select(func.count()).select_from(stmt.subquery())
+        count_stmt = select(func.count()).select_from(stmt.order_by(None).subquery())
         total_count = db_session.execute(count_stmt).scalar() or 0
+        # Get total count for pagination (remove ordering for count)
 
         # Apply pagination
         stmt = stmt.offset(offset).limit(limit)
         result = db_session.execute(stmt)
         products = result.scalars().all()
+        print("*" * 20)
+        print(f"Fetched {len(products)} products from DB.")
+        print("*" * 20)
 
         return {
             "success": True,
