@@ -1,12 +1,3 @@
-# Project Report
-
-- **Student Name: Hasidul Islam (20054905)**
-- **Programme: Master of Science (MSc) Information Systems with Computing**
-
-- **Lecturer Name: Paul Laird**
-- **Module/Subject Title: PROGRAMMING FOR INFORMATION SYSTEMS**
-- **Assignment Title:CA2 Project for PROGRAMMING FOR INFORMATION SYSTEMS**
-
 ## Company Description
 
 CrowdFarming is a European platform that connects consumers directly with organic farmers, enabling them to buy seasonal produce or adopt trees and animals to receive their harvests. It eliminates intermediaries, allowing farmers to set fair prices while reducing food waste and environmental impact. The platform supports farmers with logistics, packaging, and customer service, promoting sustainable and transparent agriculture across Europe.
