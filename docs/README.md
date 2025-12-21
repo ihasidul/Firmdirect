@@ -1,6 +1,6 @@
 ## Project Idea
 
-In my project, I want to create a platform where farmers can list their products for sale and general consumers can buy directly from the farmers. An additional feature will be that Other businesses and small stores can also post for their needs, and the platform will gather products from multiple farmers to serve the business's larger needs.
+In this project, a platform will be created where farmers can list their products for sale and general consumers can buy directly from the farmers. An additional feature will be that Other businesses and small stores can also post for their needs, and the platform will gather products from multiple farmers to serve the business's larger needs.
 
 ## Reference Company Description
 
